@@ -77,8 +77,19 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div className="w-full text-center mb-4">
+              <div className="bg-gradient-to-r from-red-500 to-yellow-500 text-white p-4 rounded-lg border-4 border-white animate-pulse">
+                <p className="text-sm font-bold" style={{fontFamily: 'Comic Sans MS, cursive'}}>
+                  ⚠️ DISCLAIMER: This is a MOCKUP FAN PAGE inspired by "Stath Lets Flats" TV show! Not a real lettings agencey! ⚠️
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-pink-300 text-sm font-bold animate-pulse" style={{fontFamily: 'Comic Sans MS, cursive'}}>
               © 2024 Michael & Eagle Lettings™. All rights reserved and that. Family busines serveing North London since 1999 or somthing.
+              <br />
+              <span className="text-yellow-300">Fan tribute to "Stath Lets Flats" - Not real busines!</span>
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-green-300 hover:text-yellow-300 transition-colors duration-300 font-bold underline" style={{fontFamily: 'Comic Sans MS, cursive'}}>Privacy Policy</a>
