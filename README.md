@@ -8,7 +8,7 @@ This website is a **parody/fan page mockup** inspired by the fictional "Michael 
 
 - **NOT A REAL BUSINESS**: This is not an actual lettings agency
 - **PARODY CONTENT**: All property listings, descriptions, and content are fictional and created for entertainment purposes
-- **FAN TRIBUTE**: Created as a humorous tribute to the brilliant BBC comedy series "Stath Lets Flats"
+- **FAN TRIBUTE**: Created as a humorous tribute to the brilliant Channel 4 comedy series "Stath Lets Flats"
 - **MOCKUP DESIGN**: Intentionally designed to look like a cheap, poorly-made website (as would fit the show's aesthetic)
 
 ## Technical Details
