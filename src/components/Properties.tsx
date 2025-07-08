@@ -90,15 +90,15 @@ const Properties = () => {
   ];
 
   return (
-    <section id="properties" className="py-20 bg-gray-50">
+    <section id="properties" className="py-20 bg-gradient-to-br from-pink-100 via-yellow-100 to-green-100" style={{backgroundImage: 'url("data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23ff0000" fill-opacity="0.1"%3E%3Cpath d="M20 20c0 11.046-8.954 20-20 20s-20-8.954-20-20 8.954-20 20-20 20 8.954 20 20z"/%3E%3C/g%3E%3C/svg%3E")'}}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Current Properties
+          <h2 className="text-4xl md:text-5xl font-bold text-red-800 mb-4 animate-bounce" style={{fontFamily: 'Comic Sans MS, cursive', textShadow: '2px 2px 0px #ffff00'}}>
+            🏠 CURRENT PROPERTYS!!! 🏠
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Discover our unique selection of rental properties across North London. 
-            Each property has been personally viewed by our team and comes with expert insights.
+          <p className="text-xl text-purple-600 max-w-3xl mx-auto font-bold" style={{fontFamily: 'Comic Sans MS, cursive'}}>
+            Discover our uneek selecshun of rental propertys across North London what we have! 
+            Each property has been personaly viewed by our team and comes with expert insites and stuff.
           </p>
         </div>
 
@@ -106,62 +106,62 @@ const Properties = () => {
           {properties.map((property) => (
             <div 
               key={property.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-gradient-to-br from-yellow-200 to-pink-200 rounded-3xl shadow-2xl overflow-hidden hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-4 hover:rotate-2 border-8 border-red-500"
             >
               <div className="relative">
                 <img 
                   src={property.image} 
                   alt={property.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover border-b-8 border-blue-500"
                 />
                 {property.featured && (
-                  <div className="absolute top-4 left-4 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-                    Featured
+                  <div className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse border-4 border-white" style={{fontFamily: 'Comic Sans MS, cursive'}}>
+                    ⭐ FEATURED!!! ⭐
                   </div>
                 )}
-                <button className="absolute top-4 right-4 bg-white bg-opacity-80 hover:bg-opacity-100 p-2 rounded-full transition-all duration-300">
-                  <Heart className="w-5 h-5 text-gray-600 hover:text-red-500" />
+                <button className="absolute top-4 right-4 bg-gradient-to-r from-pink-500 to-red-500 hover:from-red-500 hover:to-pink-500 p-3 rounded-full transition-all duration-300 animate-bounce border-4 border-white">
+                  <Heart className="w-6 h-6 text-white" />
                 </button>
               </div>
               
               <div className="p-6">
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{property.title}</h3>
-                  <div className="flex items-center text-gray-600 mb-3">
+                  <h3 className="text-xl font-bold text-red-800 mb-2" style={{fontFamily: 'Comic Sans MS, cursive'}}>{property.title}</h3>
+                  <div className="flex items-center text-purple-600 mb-3 font-bold">
                     <MapPin className="w-4 h-4 mr-1" />
-                    <span className="text-sm">{property.location}</span>
+                    <span className="text-sm" style={{fontFamily: 'Comic Sans MS, cursive'}}>{property.location}</span>
                   </div>
-                  <div className="text-2xl font-bold text-blue-600">
-                    {property.price} <span className="text-sm font-normal text-gray-600">{property.period}</span>
+                  <div className="text-3xl font-bold text-green-600 animate-pulse" style={{fontFamily: 'Comic Sans MS, cursive', textShadow: '2px 2px 0px #000000'}}>
+                    💰 {property.price} <span className="text-lg font-bold text-red-600">{property.period} 💰</span>
                   </div>
                 </div>
 
-                <div className="flex justify-between items-center text-gray-600 text-sm mb-4">
-                  <div className="flex items-center">
+                <div className="flex justify-between items-center text-blue-600 text-sm mb-4 font-bold">
+                  <div className="flex items-center" style={{fontFamily: 'Comic Sans MS, cursive'}}>
                     <Bed className="w-4 h-4 mr-1" />
                     <span>{property.bedrooms === 0 ? 'Studio' : `${property.bedrooms} bed`}</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center" style={{fontFamily: 'Comic Sans MS, cursive'}}>
                     <Bath className="w-4 h-4 mr-1" />
                     <span>{property.bathrooms} bath{property.bathrooms === 0.5 ? ' (shared)' : ''}</span>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center" style={{fontFamily: 'Comic Sans MS, cursive'}}>
                     <Square className="w-4 h-4 mr-1" />
                     <span>{property.area}</span>
                   </div>
                 </div>
 
                 <div className="mb-4">
-                  <p className="text-gray-600 text-sm mb-3 line-clamp-3">{property.description}</p>
-                  <div className="bg-blue-50 p-3 rounded-lg">
-                    <p className="text-blue-800 text-sm italic">
-                      <strong>Agent notes:</strong> "{property.stathQuote}"
+                  <p className="text-gray-700 text-sm mb-3 line-clamp-3" style={{fontFamily: 'Comic Sans MS, cursive'}}>{property.description}</p>
+                  <div className="bg-gradient-to-r from-blue-200 to-green-200 p-4 rounded-2xl border-4 border-purple-500">
+                    <p className="text-purple-800 text-sm font-bold" style={{fontFamily: 'Comic Sans MS, cursive'}}>
+                      <strong>🗣️ Agent notes:</strong> "{property.stathQuote}"
                     </p>
                   </div>
                 </div>
 
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition-colors duration-300">
-                  Arrange Viewing
+                <button className="w-full bg-gradient-to-r from-red-500 to-blue-500 hover:from-blue-500 hover:to-red-500 text-white font-bold py-4 rounded-full transition-all duration-300 animate-pulse border-4 border-yellow-400" style={{fontFamily: 'Comic Sans MS, cursive'}}>
+                  📅 ARANGE VIEWING NOW!!! 📅
                 </button>
               </div>
             </div>
@@ -169,8 +169,8 @@ const Properties = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-8 py-4 rounded-lg transition-colors duration-300">
-            View All Properties
+          <button className="bg-gradient-to-r from-yellow-400 to-red-500 hover:from-red-500 hover:to-yellow-400 text-black font-bold px-12 py-6 rounded-full transition-all duration-300 transform hover:scale-110 shadow-2xl animate-bounce border-8 border-white" style={{fontFamily: 'Comic Sans MS, cursive'}}>
+            🏠 VIEW ALL PROPERTYS!!! 🏠
           </button>
         </div>
       </div>
