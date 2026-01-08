@@ -2,7 +2,10 @@
 
 ⚠️ **DISCLAIMER: THIS IS A MOCKUP FAN PAGE** ⚠️
 
-This website is a **parody/fan page mockup** inspired by the fictional "Michael & Eagle Lettings" from the TV show "Stath Lets Flats". 
+This website is a **parody/fan page mockup** inspired by the fictional "Michael & Eagle Lettings" from the TV show "Stath Lets Flats".
+
+<img width="3429" height="1540" alt="eagle-lettings" src="https://github.com/user-attachments/assets/98891686-36db-420c-b20b-ebd9db4cf7e3" />
+
 
 ## About This Project
 
